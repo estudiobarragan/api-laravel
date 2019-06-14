@@ -13,22 +13,24 @@
 // Cargando clases
 use App\Http\Middleware\ApiAuthMiddleware;
 
-/*
+
 // RUTAS DE PRUEBA
 Route::get('/', function () {
     return view('welcome');
 });
+/*
 Route::get('/pruebas/{nombre?}',function($nombre = null){ 
     $texto  ='<h2> Texto desde una ruta <br><br>';
     $texto .= 'Nombre: '.$nombre.'</h2>';
     return view('pruebas',array('texto' => $texto));
 });
+ **/
 Route::get('/animales', 'PruebasController@index');
 Route::get('/testOrm', 'PruebasController@testOrm');
 Route::get('/usuario/prueba','UserController@pruebas');
 Route::get('/categoria/prueba','CategoryController@pruebas');
 Route::get('/entrada/prueba','PostController@pruebas');
-***/
+
 
 //RUTAS DEL API
 /*
